@@ -1,0 +1,37 @@
+<br>
+<br>
+<form class="col-md-4" [formGroup]="bankFormGroup">
+  <div class="mb-3">
+    <label for="name" class="form-label">Bank name : </label>
+    <input class="form-control"
+           id="name"
+           type="text"
+           placeholder="..."
+           formControlName="bankName">
+  </div>
+  <div class="mb-3">
+    <label for="zipCode" class="form-label">Zip code : </label>
+    <input class="form-control"
+           id="zipCode"
+           type="number"
+           placeholder="..."
+           formControlName="zipCode">
+  </div>
+  <div class="mb-3">
+    <label for="street" class="form-label">Street : </label>
+    <input class="form-control"
+           id="street"
+           type="text"
+           placeholder="..."
+           formControlName="street">
+  </div>
+  <div class="mb-3">
+    <label for="country" class="form-label">Country : </label>
+    <input class="form-control"
+           id="country"
+           type="text"
+           placeholder="..."
+           formControlName="country">
+  </div>
+  <button class="btn btn-success" type="submit" (click)="createBank()" > Save</button>
+</form>
