@@ -24,6 +24,7 @@
     <td>{{bank.customers.length}}</td>
     <td>
       <button (click)="deleteBank(bank.id)"><i class="fas fa-trash-alt"></i></button>
+      <button routerLink="/edit/" [queryParams]="{bankId: bank.id}"><i class="fas fa-trash-alt"></i></button>
     </td>
   </tr>
   </tbody>
